@@ -575,6 +575,39 @@ body {
     0%, 100% { transform: rotate(3deg); }
     50% { transform: rotate(-3deg); }
 }
+    /* Navbar height smaller */
+header,
+.navbar,
+.nav-container{
+  padding:10px 20px;
+  min-height:60px;
+}
+
+/* Logo size smaller */
+.logo img{
+  height:45px;
+}
+
+/* Menu text smaller */
+.nav-links a{
+  font-size:14px;
+}
+
+/* Mobile navbar */
+@media(max-width:768px){
+
+header,
+.navbar,
+.nav-container{
+  padding:8px 15px;
+  min-height:55px;
+}
+
+.logo img{
+  height:38px;
+}
+
+}
 </style>
 </head>
 <body>
