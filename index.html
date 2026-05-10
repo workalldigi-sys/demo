@@ -575,14 +575,31 @@ body {
     0%, 100% { transform: rotate(3deg); }
     50% { transform: rotate(-3deg); }
 }
-    img[src*="text-logo"]{
-   height:40px;
-   margin-top:5px;
-   margin-bottom:5px;
-}
 img[src*="text-logo"]{
    height:40px;
    margin-left:-10px;
+}
+.gallery-btn{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.gallery-btn a{
+    display: inline-block;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #0f172a, #2563eb);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.gallery-btn a:hover{
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.35);
 }
 </style>
 </head>
@@ -593,6 +610,7 @@ img[src*="text-logo"]{
 <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
 <a href="tel:8074425634"><i class="fas fa-phone-alt"></i> 8074425634</a>
 <a href="tel:8247338511"><i class="fas fa-phone-alt"></i> 8247338511</a>
+<a href="tel:6281968616"><i class="fas fa-phone-alt"></i> 6281968616</a>
 </div>
 <span class="admission-badge"><i class="fas fa-graduation-cap"></i> Book Your Campus Tour</span>
 </div>
@@ -716,7 +734,7 @@ img[src*="text-logo"]{
 <p><strong>Our Mission:</strong> To empower students with knowledge, skills, and values to become competent professionals and responsible citizens who contribute to nation-building.</p>
 <p><strong>Our Vision:</strong> To be a globally recognized centre of excellence in higher education, fostering innovation, research, and holistic development of students.</p>
 <div class="about-features">
-<div class="about-feature"><i class="fas fa-check-circle"></i> Standard curriculum</div>
+<div class="about-feature"><i class="fas fa-check-circle"></i> Standard Curriculum</div>
 <div class="about-feature"><i class="fas fa-check-circle"></i> Industry Partnerships</div>
 <div class="about-feature"><i class="fas fa-check-circle"></i> Modern Infrastructure</div>
 <div class="about-feature"><i class="fas fa-check-circle"></i> Holistic Development</div>
@@ -816,7 +834,7 @@ img[src*="text-logo"]{
 <div class="course-details">
 <div class="course-detail">
 <h4><i class="fas fa-clock"></i> Duration</h4>
-<p class="info">3 Years (6 Semesters)</p>
+<p class="info">4 Years (6 Semesters)</p>
 </div>
 <div class="course-detail">
 <h4><i class="fas fa-user-graduate"></i> Eligibility</h4>
@@ -941,78 +959,10 @@ img[src*="text-logo"]{
 </div>
 </div>
 
-<!-- B.Com -->
-<div class="course-item reveal">
-<div class="course-header" onclick="toggleCourse(this)">
-<h3><span class="c-badge">HONOURS</span> B.Com — Bachelor of Commerce</h3>
-<div class="arrow"><i class="fas fa-chevron-down"></i></div>
-</div>
-<div class="course-body">
-<div class="course-body-inner">
-<p>B.Com (Honours) at Vaishnavi College provides a comprehensive foundation in commerce, accounting, finance, and taxation. The program integrates theoretical knowledge with practical skills through industry-recognized certifications in Tally, GST, and financial analytics.</p>
-<p>Our B.Com graduates are equipped to handle the complexities of modern business and finance, with strong analytical skills and professional competence sought by top employers.</p>
-<div class="course-details">
-<div class="course-detail">
-<h4><i class="fas fa-clock"></i> Duration</h4>
-<p class="info">3 Years (6 Semesters)</p>
-</div>
-<div class="course-detail">
-<h4><i class="fas fa-user-graduate"></i> Eligibility</h4>
-<p class="info">Min 50% in 10+2 (Commerce/any stream) with English</p>
-</div>
-<div class="course-detail">
-<h4><i class="fas fa-certificate"></i> Value-Added Certifications</h4>
-<ul>
-<li>Tally Prime with GST</li>
-<li>SAP (FICO Module)</li>
-<li>Advanced Excel & Data Analytics</li>
-<li>Income Tax & GST Filing</li>
-<li>Stock Market Operations (NISM)</li>
-<li>E-Commerce Management</li>
-</ul>
-</div>
-<div class="course-detail">
-<h4><i class="fas fa-briefcase"></i> Career Opportunities</h4>
-<ul>
-<li>Chartered Accountant</li>
-<li>Financial Analyst</li>
-<li>Tax Consultant</li>
-<li>Banking Professional</li>
-<li>Auditor</li>
-<li>Company Secretary</li>
-<li>Accounts Manager</li>
-</ul>
-</div>
-<div class="course-detail">
-<h4><i class="fas fa-lightbulb"></i> Skills Gained</h4>
-<ul>
-<li>Financial Accounting</li>
-<li>Taxation Knowledge</li>
-<li>Auditing Skills</li>
-<li>Business Law</li>
-<li>Cost Analysis</li>
-<li>Banking Operations</li>
-</ul>
-</div>
-<div class="course-detail">
-<h4><i class="fas fa-star"></i> Program Highlights</h4>
-<ul>
-<li>CA Foundation Support</li>
-<li>Industry Expert Lectures</li>
-<li>Practical Accounting Labs</li>
-<li>Bank & Company Visits</li>
-<li>Placement Assistance</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
 <!-- B.Sc Computers -->
 <div class="course-item reveal">
 <div class="course-header" onclick="toggleCourse(this)">
-<h3><span class="c-badge">HONOURS</span> B.Sc — Computer Science</h3>
+<h3><span class="c-badge">HONOURS</span> B.Sc (Computer Science) </h3>
 <div class="arrow"><i class="fas fa-chevron-down"></i></div>
 </div>
 <div class="course-body">
@@ -1022,7 +972,7 @@ img[src*="text-logo"]{
 <div class="course-details">
 <div class="course-detail">
 <h4><i class="fas fa-clock"></i> Duration</h4>
-<p class="info">3 Years (6 Semesters)</p>
+<p class="info">4 Years (6 Semesters)</p>
 </div>
 <div class="course-detail">
 <h4><i class="fas fa-user-graduate"></i> Eligibility</h4>
@@ -1077,6 +1027,71 @@ img[src*="text-logo"]{
 </div>
 </div>
 
+<!-- B.Com -->
+<div class="course-item reveal">
+<div class="course-header" onclick="toggleCourse(this)">
+<h3><span class="c-badge">HONOURS</span> B.Com (Computer Application)</h3>
+<div class="arrow"><i class="fas fa-chevron-down"></i></div>
+</div>
+<div class="course-body">
+<div class="course-body-inner">
+<p>B.Com (Honours) at Vaishnavi College provides a comprehensive foundation in commerce, accounting, finance, and taxation. The program integrates theoretical knowledge with practical skills through industry-recognized certifications in Tally, GST, and financial analytics.</p>
+<p>Our B.Com graduates are equipped to handle the complexities of modern business and finance, with strong analytical skills and professional competence sought by top employers.</p>
+<div class="course-details">
+<div class="course-detail">
+<h4><i class="fas fa-clock"></i> Duration</h4>
+<p class="info">4 Years (6 Semesters)</p>
+</div>
+<div class="course-detail">
+<h4><i class="fas fa-user-graduate"></i> Eligibility</h4>
+<p class="info">Min 50% in 10+2 (Commerce/any stream) with English</p>
+</div>
+<div class="course-detail">
+<h4><i class="fas fa-certificate"></i> Value-Added Certifications</h4>
+<ul>
+<li>Tally Prime with GST</li>
+<li>SAP (FICO Module)</li>
+<li>Advanced Excel & Data Analytics</li>
+<li>Income Tax & GST Filing</li>
+<li>Stock Market Operations (NISM)</li>
+<li>E-Commerce Management</li>
+</ul>
+</div>
+<div class="course-detail">
+<h4><i class="fas fa-briefcase"></i> Career Opportunities</h4>
+<ul>
+<li>Chartered Accountant</li>
+<li>Financial Analyst</li>
+<li>Tax Consultant</li>
+<li>Banking Professional</li>
+<li>Auditor</li>
+<li>Company Secretary</li>
+<li>Accounts Manager</li>
+</ul>
+</div>
+<div class="course-detail">
+<h4><i class="fas fa-lightbulb"></i> Skills Gained</h4>
+<ul>
+<li>Financial Accounting</li>
+<li>Taxation Knowledge</li>
+<li>Auditing Skills</li>
+<li>Business Law</li>
+<li>Cost Analysis</li>
+<li>Banking Operations</li>
+</ul>
+</div>
+<div class="course-detail">
+<h4><i class="fas fa-star"></i> Program Highlights</h4>
+<ul>
+<li>CA Foundation Support</li>
+<li>Industry Expert Lectures</li>
+<li>Practical Accounting Labs</li>
+<li>Bank & Company Visits</li>
+<li>Placement Assistance</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -1263,8 +1278,8 @@ img[src*="text-logo"]{
 </div>
 <div class="facility-card reveal">
 <div class="f-icon"><i class="fas fa-book-reader"></i></div>
-<h3>Library</h3>
-<p>Rich library with 10,000+ books, journals, reference materials, and a quiet study zone for focused learning.</p>
+<h3>Skill Development</h3>
+<p>Specialized training sessions, workshops, and seminars to enhance students' professional skills and industry readiness..</p>
 </div>
 <div class="facility-card reveal">
 <div class="f-icon"><i class="fas fa-chalkboard"></i></div>
@@ -1315,7 +1330,6 @@ img[src*="text-logo"]{
 </div>
 </section>
 
-GALLERY -->
 <section class="gallery" id="gallery">
 <div class="container">
 <div class="section-header">
@@ -1324,35 +1338,50 @@ GALLERY -->
 <p>Glimpses of life and learning at Vaishnavi College.</p>
 <div class="line"></div>
 </div>
+
 <div class="gallery-grid">
 <div class="gallery-item reveal">
 <img src="1.jpeg" alt="Campus View">
 </div>
+
 <div class="gallery-item reveal">
 <img src="2.jpeg" alt="Classroom">
 </div>
+
 <div class="gallery-item reveal">
 <img src="3.jpeg" alt="Library">
 </div>
+
 <div class="gallery-item reveal">
 <img src="4.jpeg" alt="Group Study">
 </div>
+
 <div class="gallery-item reveal">
 <img src="5.jpeg" alt="Computer Lab">
 </div>
+
 <div class="gallery-item reveal">
 <img src="6.jpeg" alt="Event">
 </div>
+
 <div class="gallery-item reveal">
 <img src="7.jpeg" alt="Workshop">
 </div>
+
 <div class="gallery-item reveal">
 <img src="last.jpeg" alt="Graduation">
 </div>
 </div>
+
+<!-- See More Button -->
+<div class="gallery-btn">
+<a href="https://www.instagram.com/vaishnavi_college_official?igsh=MXQ0bjNmNGFoa2oweQ==" target="_blank">
+See More Photos
+</a>
+</div>
+
 </div>
 </section>
-
 <!-- TESTIMONIALS -->
 <section class="testimonials-section">
 <div class="container">
@@ -1515,7 +1544,7 @@ Yes! All our value-added certification programs are conducted through reputed tr
 <h2>Start Your Journey Today</h2>
 <p>Fill out the enquiry form and our admissions team will get in touch with you within 24 hours. Take the first step towards a bright future at Vaishnavi College.</p>
 <ul class="form-features">
-<li><i class="fas fa-check-circle"></i> No application fee</li>
+<li><i class="fas fa-check-circle"></i> Expert Faculty Support</li>
 <li><i class="fas fa-check-circle"></i> Instant WhatsApp confirmation</li>
 <li><i class="fas fa-check-circle"></i> Personalized counseling session</li>
 <li><i class="fas fa-check-circle"></i> Scholarship information included</li>
@@ -1526,7 +1555,7 @@ Yes! All our value-added certification programs are conducted through reputed tr
 <div style="width:50px;height:50px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--primary-dark);flex-shrink:0"><i class="fas fa-phone-alt"></i></div>
 <div>
 <p style="color:var(--accent-light);font-weight:700;font-size:.85rem">Admissions Helpline</p>
-<p style="color:white;font-size:1.1rem;font-weight:700">8074425634 / 8247338511</p>
+<p style="color:white;font-size:1.1rem;font-weight:700">8074425634 / 8247338511 / 6281968616</p>
 </div>
 </div>
 </div>
@@ -1583,7 +1612,7 @@ Yes! All our value-added certification programs are conducted through reputed tr
 <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
 <div>
 <h4>Our Address</h4>
-<p>Ujhwal Hospital Lane, Opp. GVMC Park, Madhurawada, Visakhapatnam - 530048, Andhra Pradesh</p>
+<p>Near D-Mart, Madhurawada, Visakhapatnam - 530048, Andhra Pradesh</p>
 </div>
 </div>
 <div class="contact-card reveal">
@@ -1593,7 +1622,7 @@ Yes! All our value-added certification programs are conducted through reputed tr
 <p><a href="tel:08913152495">0891-3152495</a></p>
 <p><a href="tel:8074425634">8074425634</a></p>
 <p><a href="tel:8247338511">8247338511</a></p>
-<p><a href="tel:9866401010">9866401010</a></p>
+<p><a href="tel:9866401010">6281968616</a></p>
 </div>
 </div>
 <div class="contact-card reveal">
@@ -1608,7 +1637,7 @@ Yes! All our value-added certification programs are conducted through reputed tr
 <div>
 <h4>Office Hours</h4>
 <p>Monday – Saturday: 9:00 AM – 5:00 PM</p>
-<p>Sunday: 9:00 AM - 1:00 PM</p>
+<p>Sunday:  9:00 AM – 1:00 PM</p>
 </div>
 </div>
 </div>
@@ -1671,7 +1700,7 @@ Yes! All our value-added certification programs are conducted through reputed tr
 <ul>
 <li><a href="tel:8074425634"><i class="fas fa-phone-alt"></i> 8074425634</a></li>
 <li><a href="tel:8247338511"><i class="fas fa-phone-alt"></i> 8247338511</a></li>
-<li><a href="tel:9866401010"><i class="fas fa-phone-alt"></i> 9866401010</a></li>
+<li><a href="tel:6281968616"><i class="fas fa-phone-alt"></i> 6281968616</a></li>
 <li><a href="mailto:jaggarao634@gmail.com"><i class="fas fa-envelope"></i> Email Us</a></li>
 <li><a href="#contact"><i class="fas fa-map-marker-alt"></i> Madhurawada, Vizag</a></li>
 </ul>
